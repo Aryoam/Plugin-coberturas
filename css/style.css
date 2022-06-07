@@ -1,0 +1,316 @@
+
+/* Contains all content */
+.contenedor-contenido {
+	margin-top: 4px;
+	font-size: 17px;
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+
+@media (min-width: 600px) {
+
+	/* Featured image */
+	.img-cobertura {
+	position: relative;
+	z-index: -1;
+	}
+
+	/* Gradient featured image */
+	.img-cobertura:before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: linear-gradient(rgba(255,255,255,0) 56%, white);
+	}
+
+	/* Contains all content */
+	.contenedor-contenido {
+		margin-top: -100px;
+		width: 85%;
+		margin-right: auto;
+		margin-left: auto;
+		z-index: 10;
+	}
+}
+
+/* Contains all content after image */
+.contenido-principal {
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding: 30px;
+	box-shadow: 0px 0px 9px 1px rgba(224, 224, 224);
+}
+
+/* Main title */
+.title-principal h3{
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 32px;
+}
+
+/* Contains the first paragraph */
+.contenido-evento {
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #b4c3d3;
+}
+
+/* Container of the second paragraph */
+.contenedor-final {
+	margin-top: 20px;
+}
+
+/* Contain the second paragraph */
+.parrafo-final {
+	margin-bottom: 0;
+}
+
+/* Contain the text ¨EL FINAL¨ */
+.title-final {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #b4c3d3;
+	margin-bottom: 10px;
+}
+
+/* Contain the second text and icon */
+.parrafo-con-icono {
+	display: grid;
+	grid-template-columns: 90% 10%;
+}
+
+/* Star icon styles */
+.parrafo-con-icono i {
+	font-size: 30px;
+	text-align: right;
+	color: #b4c3d3;
+}
+
+/* Hide the star icon */
+.contenedor-estrellas .icon {
+	display: none;
+}
+
+/* Grid container ¨VALORACIÓN¨ */
+.contenedor-estrellas {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+/* Styles stars */
+.contenedor-estrellas span {
+	margin: auto;
+	font-size: 30px;
+	color: #ffd300;
+}
+
+@media (min-width: 600px) {
+	.contenedor-estrellas {
+		display: grid;
+		grid-template-columns: 20% 60% 20%;
+		margin-top: -10px;
+	}
+	
+	.contenedor-estrellas .icon {
+		font-size: 30px;
+		color: #b4c3d3;
+		margin: auto 0;
+		text-align: right;
+		display: inline;
+	}
+}
+
+/* Container ¨VALORACIÓN¨ */
+.contenedor-valoracion {
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding: 30px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 9px 1px rgba(224, 224, 224);
+}
+
+/* Text ¨VALORACIÓN¨*/
+.title-valoracion {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #b4c3d3;
+	margin-bottom: 5px;
+}
+
+/* Style average */
+.promedio {
+	font-size: 40px;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Container all graphics */
+.contenedor-estadisticas {
+	text-align: center;
+	margin-top: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 5px;
+}
+
+/* Colored containers */
+.contenedor-estadisticas .calidad {
+	background-color: #e55d02;
+	border-radius: 10px;
+	box-shadow: 0px 0px 9px 1px rgba(224, 224, 224);
+	padding: 10px;
+}
+
+/* Colored containers */
+.contenedor-estadisticas .narrativa {
+	background-color: #2eb2dd;
+	border-radius: 10px;
+	box-shadow: 0px 0px 9px 1px rgba(224, 224, 224);
+	padding: 10px;
+}
+
+/* Colored containers */
+.contenedor-estadisticas .rivalidad {
+	background-color: #2269e8;
+	border-radius: 10px;
+	box-shadow: 0px 0px 9px 1px rgba(224, 224, 224);
+	padding: 10px;
+}
+
+/* Remove margin from the text of the graphics */
+.contenedor-estadisticas .calidad p {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+/* Remove margin from the text of the graphics */
+.contenedor-estadisticas .narrativa p {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+/* Remove margin from the text of the graphics */
+.contenedor-estadisticas .rivalidad p {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+/* Font of the number of the graphics */
+.progressbar-text {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+@media (min-width: 600px) {
+	.contenedor-estadisticas {
+		grid-gap: 20px;
+	}
+	
+	/* Colored containers */
+	.contenedor-estadisticas .calidad {
+		margin-bottom: 0;
+		padding: 30px;
+	}
+
+	/* Colored containers */
+	.contenedor-estadisticas .narrativa {
+		margin-bottom: 0;
+		padding: 30px;
+	}
+	
+	/* Colored containers */
+	.contenedor-estadisticas .rivalidad {
+		margin-bottom: 0;
+		padding: 30px;
+	}
+
+	.progressbar-text {
+		font-size: 31px;
+		font-weight: bold;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.iconos-titulo {
+	text-align: center;
+	display: flex;
+  	justify-content: space-evenly;
+  	align-items: center;
+}
+
+/* Container ¨PRO¨ */
+.contenedor-opinion .contenedor-pro {
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding: 30px;
+	box-shadow: 0px 0px 9px 1px rgba(224, 224, 224);
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.contenedor-pro ul {
+	list-style: none;
+	padding: 15px 0 0 0;
+	margin-bottom: 0px;
+	margin-left: 0;
+}
+
+.contenedor-pro li:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+/* Container ¨CONTRA¨ */
+.contenedor-opinion .contenedor-contra {
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding: 30px;
+	box-shadow: 0px 0px 9px 1px rgba(224, 224, 224);
+}
+
+.contenedor-contra ul {
+	list-style: none;
+	padding: 15px 0 0 0;
+	margin-bottom: 0px;
+	margin-left: 0;
+}
+
+.contenedor-contra li:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.iconos-titulo i {
+	font-size: 30px;
+	color: #b4c3d3;
+	margin: auto 0;
+	text-align: right;
+}
+
+.iconos-titulo p {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #b4c3d3;
+	margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+	.contenedor-opinion {
+		margin-top: 20px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+	}
+	
+	.contenedor-opinion .contenedor-pro {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
